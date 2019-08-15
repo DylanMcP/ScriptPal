@@ -7,10 +7,10 @@ module.exports = {
                port: 7545,
                network_id: "*" // Match any network id
           },
-          chainskills: {
+           blkchain: {
             host: "localhost",
-            port: 8545,
-            network_id: "4224",
+            port: 8543,
+            network_id: "58343",
             gas: 4700000
           }
      }
