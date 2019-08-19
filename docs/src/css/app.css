@@ -1,0 +1,45 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 114px;
+}
+
+.welcome {
+  font-size: 18px;
+  display: inline;
+  padding: 5px;
+}
+.logo {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 40%;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #4099db;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: #4099db;
+}
