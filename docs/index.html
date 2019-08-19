@@ -7,28 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>ScriptPal</title>
-<style> 
-  .topnav {
-  background-color: #4099db;
-  overflow: hidden;
-}
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: #4099db;
-}
-</style>
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -81,6 +60,7 @@
   </div>
 
 
+
   <div id="articleTemplate" style="display: none;">
     <div class="row-lg-12">
       <div class="panel panel-default panel-article">
@@ -98,7 +78,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>  
 
   <!-- Modal form to sell an article -->
   <div class="modal fade" id="sellArticle" role="dialog">
@@ -117,7 +97,14 @@
               <form>
                 <div class="form-group">
                   <label for="article_name">Drug Prescribed</label>
-                  <input type="text" class="form-control" id="article_name" placeholder="Enter the drug you are prescribing">
+                  <input list="medicines" name="medicines" class="form-control" id="article_name" placeholder="Enter the drug you are prescribing">
+                    <datalist id="medicines">
+                      <option value="Adrenaline (Epinephrine), 1:10,000 Sterile, Solution Minijet">
+                      <option value="Amoxicillin, 250 mg, hard capsules">
+                      <option value="Diazepam, 10 mg, Tablets">
+                      <option value="Tadalafil Krka, 20mg, film-coated tablets">
+                      <option value="Tyvense, 60mg, Capsules, hard">
+                    </datalist> 
                 </div>
                 <div class="form-group">
                   <label for="price">Quantity</label>
